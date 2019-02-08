@@ -23,7 +23,7 @@ socket.on('createmessage',(newmessage,callback)=>
 {console.log(newmessage);
 io.emit('newmessage',generatemessage(newmessage.from,newmessage.text));
 
-callback('This is from server');
+callback();
 
 });
 socket.on('createlocationmessage',(coords)=>
